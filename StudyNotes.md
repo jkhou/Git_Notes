@@ -1,7 +1,14 @@
-Git is a distributed version control system.
 
-Git is free software.
-Git has a mutable index called stage.
-Git tracks changes.
+### Git 工作流程
+- 1.克隆 Git 资源作为工作目录。
+- 2.在克隆的资源上添加或修改文件。
+- 3.如果其他人修改了，你可以更新资源。
+- 4.在提交前查看修改。
+- 5.提交修改。
+- 6.在修改完成后，如果发现错误，可以撤回提交并再次修改并提交。
 
-Git push test.
+### Git 工作区、暂存区和版本库
+- **工作区**：电脑里能看到的目录。
+- **暂存区**：英文叫 stage 或 index。一般存放在 .git 目录下的 index 文件（.git/index）中，所以暂存区也叫作索引（index）。
+- **版本库**：工作区有一个隐藏目录 .git，这个不算工作区，而是 Git 的版本库。
+
