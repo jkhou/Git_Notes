@@ -36,6 +36,7 @@
  
  
 ## 提交与修改
+
 ### 1.git add
 
 **`git add [file1] [file2]`** 添加一个或多个文件到暂存区
@@ -79,6 +80,41 @@
 **`git reset --hard HEAD`** --hard 参数撤销工作区中所有未提交的修改内容，将暂存区与工作区都回到上一次版本，并删除之前的所有信息提交
 
 **`git reset --hard origin/master`** 将本地的状态回退到和远程的一样
+
+**`git reset HEAD`** 用于取消已缓存的内容
+ 
+ #### HAED说明：
+ 
+ - `HEAD` `HEAD~0` 表示当前版本
+ 
+ - `HEAD^` `HEAD~1` 表示上一个版本
+ 
+ - `HEAD^^` `HEAD^2` 表示上上一个版本
+ 
+ - `HEAD^^^` `HEAD^3` 表示上上上一个版本
+ 
+ ### 6.git rm
+ 
+ **`git rm <file>`** 将文件从暂存区和工作区中删除
+ 
+ **`git rm -f <file>`** 强行从暂存区和工作区中删除修改后的文件
+ 
+ **`git rm --cached <file>`** 把文件从暂存区域移除，但仍然希望保留在当前工作目录中
+ 
+ ## 提交日志
+ 
+ **`git log`**  查看历史提交记录
+ 
+ **`git blame <file>`** 以列表形式查看指定文件的历史修改记录
+ 
+ ## 远程操作
+ 
+ ### 1.git remote
+ 
+ **`git remote -v`** 显示所有远程仓库,origin 为远程地址的别名
+ 
+ 
+ 
  
  
  
