@@ -119,12 +119,27 @@
  
  **`git remote add origin git@github.com:jkhou/Git_Notes.git`** 添加远程版本库
  
-  ### 2.git remote
+ ### 2.git fetch
  
  **`git fetch origin`** 告诉 Git 去获取它有你没有的数据
  
  **`git merge origin/master`** 将服务器上的任何更新（假设有人这时候推送到服务器了）合并到你的当前分支
  
+  ### 3.git pull
+ 
+ **`git pull <远程主机名> <远程分支名>:<本地分支名>`** 从远程获取代码并合并本地的版本
+ 
+ **`git pull origin master:brantest`** 将远程主机 origin 的 master 分支拉取过来，与本地的 brantest 分支合并
+ 
+ **`git pull origin master`** 如果远程分支是与当前分支合并，则冒号后面的部分可以省略
+ 
+ ### 4.git push
+ 
+ **`git push <远程主机名> <远程分支名>:<本地分支名>`** 从将本地的分支版本上传到远程并合并
+ 
+ **`git push origin master`** 将本地的 master 分支推送到 origin 主机的 master 分支
+ 
+ **`git push --force origin master** 如果本地版本与远程版本有差异，但又要强制推送可以使用 --force 参数
  
  
  
