@@ -113,6 +113,8 @@
  
  **`git remote -v`** 显示所有远程仓库,origin 为远程地址的别名
  
+ **`git remote show https://github.com/jkhou/Git_Notes`** 显示某个远程仓库的信息
+ 
  
  
  
