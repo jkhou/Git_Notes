@@ -139,7 +139,7 @@
  
  **`git push origin master`** 将本地的 master 分支推送到 origin 主机的 master 分支
  
- **`git push --force origin master** 如果本地版本与远程版本有差异，但又要强制推送可以使用 --force 参数
+ **`git push --force origin master`** 如果本地版本与远程版本有差异，但又要强制推送可以使用 --force 参数
  
  
  
