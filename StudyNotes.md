@@ -115,6 +115,11 @@
  
  **`git remote show https://github.com/jkhou/Git_Notes`** 显示某个远程仓库的信息
  
+ **`git remote rm origin`** 删除关联的origin的远程库
+ 
+ **`git remote add origin git@github.com:jkhou/Git_Notes.git`** 添加远程版本库
+ 
+ 
  
  
  
