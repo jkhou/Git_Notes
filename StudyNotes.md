@@ -68,7 +68,17 @@
 
 **`git commit -a`** -a 参数设置修改文件后不需要执行 git add 命令，直接提交
 
+### 5.git reset
 
+**`git reset  [HEAD] `** 重置暂存区的文件与上一次的提交`commit`保持一致，工作区文件内容保持不变
+
+**`git reset HEAD^ StudyNotes.md`** 回退 StudyNotes.md 文件的版本到上一个版本 
+
+**`git reset --soft HEAD`** --soft 参数用于回退到某个版本
+
+**`git reset --hard HEAD`** --hard 参数撤销工作区中所有未提交的修改内容，将暂存区与工作区都回到上一次版本，并删除之前的所有信息提交
+
+**`git reset --hard origin/master`** 将本地的状态回退到和远程的一样
  
  
  
