@@ -119,7 +119,11 @@
  
  **`git remote add origin git@github.com:jkhou/Git_Notes.git`** 添加远程版本库
  
+  ### 2.git remote
  
+ **`git fetch origin`** 告诉 Git 去获取它有你没有的数据
+ 
+ **`git merge origin/master`** 将服务器上的任何更新（假设有人这时候推送到服务器了）合并到你的当前分支
  
  
  
