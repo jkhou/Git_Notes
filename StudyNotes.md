@@ -141,7 +141,66 @@
  
  **`git push --force origin master`** 如果本地版本与远程版本有差异，但又要强制推送可以使用 --force 参数
  
+  ## 分支管理
+  
+  使用分支将工作切分开来，从而让我们能够在不同开发环境中做事，并来回切换。
+  
+  **`git branch (branchname)`** 创建分支
+  
+  **`git checkout (branchname)`** 切换分支
+  
+  **`git checkout -b (branchname) `** 创建新分支并立即切换到该分支下，从而在该分支中操作
+  
+  **`git merge `** 合并分支
+  
+  **`git branch`** 列出分支
+  
+  **`git branch -d (branchname)`** 删除分支
+  
+  **`git merge`** 合并分支
+  
+  ## 标签
+  
+  **`git tag -a v1.0`** 给最新一次提交打上（HEAD）"v1.0"的标签
+  
+  ## Github操作
+  
+  ### 添加远程库
+  
+  **`ssh-keygen -t rsa -C "cquhjk@126.com"`** 由于本地 Git 仓库和 GitHub 仓库之间的传输是通过SSH加密的，所以我们需要配置验证信息。
+  
+  - 成功的话会在 ~/ 下生成 .ssh 文件夹，进去，打开 id_rsa.pub，复制里面的 key。
+  
+  - 回到 github 上，进入 Account => Settings（账户配置）。
+  
+  - 选择 SSH and GPG keys，然后点击 New SSH key 按钮,title 设置标题，可以随便填，粘贴在你电脑上生成的 key。
  
+  **`ssh -T git@github.com`** 验证是否成功
+  
+  **`git remote add origin git@github.com:jkhou/Git_Notes.git`**  提交到 Github
+  
+  **`git push -u origin master`**
+  
+  ### 查看当前的远程库
+  
+  **`git remote`** 查看当前配置有哪些远程仓库
+  
+  **`git remote -v`** 显示所有远程仓库,origin 为远程地址的别名
+  
+  ### 提取远程仓库
+  
+  **`git fetch origin`**  从远程仓库下载新分支与数据
+  
+  **`git merge origin/master`** 从远端仓库提取数据并尝试合并到当前分支
+  
+  ### 推送到远程仓库
+ 
+  **` git push origin master`**   推送到 Github
+  
+  ### 删除远程仓库
+  
+  **` git remote rm origin2`**  删除仓库 origin2
+  
  
  
  
