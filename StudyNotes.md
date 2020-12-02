@@ -141,6 +141,8 @@
  
  **`git push --force origin master`** 如果本地版本与远程版本有差异，但又要强制推送可以使用 --force 参数
  
+ **`git push origin --delete [branchname]`** 删除远程分支
+ 
   ## 分支管理
   
   使用分支将工作切分开来，从而让我们能够在不同开发环境中做事，并来回切换。
